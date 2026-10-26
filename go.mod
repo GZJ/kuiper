@@ -26,7 +26,6 @@ require (
 	github.com/cpuguy83/go-md2man v1.0.10 // indirect
 	github.com/fxamacker/cbor/v2 v2.2.0 // indirect
 	github.com/golang/protobuf v1.4.3 // indirect
-	github.com/google/go-cmp v0.6.0 // indirect
 	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
 	github.com/prometheus/client_model v0.2.0 // indirect
 	github.com/prometheus/common v0.26.0 // indirect
@@ -44,3 +43,5 @@ go 1.26.0
 replace github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
 
 replace golang.org/x/oauth2 => golang.org/x/oauth2 v0.27.0
+
+replace golang.org/x/mod => golang.org/x/mod v0.41.0
