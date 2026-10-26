@@ -30,7 +30,7 @@ func main() {
 	rs, err := rp.ExecCreate("$$test1", "{\"sql\": \"SELECT echo(count) FROM ext where count > 3\",\"actions\": [{\"memory\":  {}}]}")
 	if err != nil {
 		msg := fmt.Sprintf("failed to create rule: %s.", err)
-		log.Print(msg)
+		log.Printf(msg)
 	}
 
 	tp, err := rp.ExecInitRule(rs)

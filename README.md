@@ -124,7 +124,7 @@ Join our [Slack](https://join.slack.com/t/emqx/shared_invite/zt-7xrracuf-GGdbNB1
 
 #### Preparation
 
-- Go version >= 1.26 (CI: 1.27.3)
+- Go version >= 1.13
 
 #### Compile
 

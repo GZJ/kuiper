@@ -168,8 +168,8 @@ func TestRestSink_Apply(t *testing.T) {
 			Body:        string(body),
 			ContentType: r.Header.Get("Content-Type"),
 		})
-		contextLogger.Debug(string(body))
-		fmt.Fprint(w, string(body))
+		contextLogger.Debugf(string(body))
+		fmt.Fprintf(w, string(body))
 	}))
 	defer ts.Close()
 	for i, tt := range tests {
@@ -336,8 +336,8 @@ func TestRestSinkTemplate_Apply(t *testing.T) {
 			Body:        string(body),
 			ContentType: r.Header.Get("Content-Type"),
 		})
-		contextLogger.Debug(string(body))
-		fmt.Fprint(w, string(body))
+		contextLogger.Debugf(string(body))
+		fmt.Fprintf(w, string(body))
 	}))
 	defer ts.Close()
 	for i, tt := range tests {
