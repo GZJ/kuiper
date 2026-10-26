@@ -20,4 +20,27 @@ require (
 	github.com/urfave/cli v1.22.0
 )
 
-go 1.13
+require (
+	github.com/beorn7/perks v1.0.1 // indirect
+	github.com/cespare/xxhash/v2 v2.1.1 // indirect
+	github.com/cpuguy83/go-md2man v1.0.10 // indirect
+	github.com/fxamacker/cbor/v2 v2.2.0 // indirect
+	github.com/golang/protobuf v1.4.3 // indirect
+	github.com/google/go-cmp v0.6.0 // indirect
+	github.com/matttproud/golang_protobuf_extensions v1.0.1 // indirect
+	github.com/prometheus/client_model v0.2.0 // indirect
+	github.com/prometheus/common v0.26.0 // indirect
+	github.com/prometheus/procfs v0.6.0 // indirect
+	github.com/russross/blackfriday v1.5.2 // indirect
+	github.com/x448/float16 v0.8.4 // indirect
+	golang.org/x/net v0.60.0 // indirect
+	golang.org/x/sys v0.48.0 // indirect
+	google.golang.org/protobuf v1.26.0-rc.1 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
+
+go 1.26.0
+
+replace github.com/gogo/protobuf => github.com/gogo/protobuf v1.3.2
+
+replace golang.org/x/oauth2 => golang.org/x/oauth2 v0.27.0

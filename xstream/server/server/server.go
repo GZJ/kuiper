@@ -68,7 +68,7 @@ func StartUp(Version string) {
 	listener, e := net.Listen("tcp", fmt.Sprintf(":%d", common.Config.Basic.Port))
 	if e != nil {
 		m := fmt.Sprintf("Listen error: %s", e)
-		fmt.Printf(m)
+		fmt.Print(m)
 		logger.Fatal(m)
 	}
 
@@ -108,7 +108,7 @@ func StartUp(Version string) {
 	}
 	msg := fmt.Sprintf("Serving kuiper (version - %s) on port %d, and restful api on %s://0.0.0.0:%d. \n", Version, common.Config.Basic.Port, t, common.Config.Basic.RestPort)
 	logger.Info(msg)
-	fmt.Printf(msg)
+	fmt.Print(msg)
 
 	// Start accept incoming HTTP connections
 	err = http.Serve(listener, nil)
